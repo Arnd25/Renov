@@ -1,0 +1,10 @@
+.navbar {
+  &__menu {
+    @include d-flex(center,center,#{rem(32)});
+    &-link {
+      font-size: rem(14);
+      text-align: center;
+    }
+    &-item {}
+  }
+}

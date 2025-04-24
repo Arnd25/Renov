@@ -1,0 +1,27 @@
+.button {
+  cursor: pointer;
+  padding: rem(4) rem(4) rem(4) rem(16);
+  border-radius: rem(72);
+  display: flex;
+  align-items: center;
+  color: var(--secondary);
+  font-weight: 500;
+  column-gap: rem(8);
+  transition: background-color .2s;
+  &__icon {
+    @include square(#{rem(40)});
+    border-radius: 50%;
+    background-color: var(--secondary);
+    @include d-flex(center, center);
+    color: var(--secondary-foreground);
+  }
+  &--primary {
+    background: var(--primary);
+  }
+  &--secondary {
+    background: var(--muted);
+  }
+  &:is(:hover,:active) {
+    background-color: var(--accent);
+  }
+}

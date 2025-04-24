@@ -1,0 +1,14 @@
+.header {
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  padding-block: rem(78);
+  width: 100%;
+  &__inner {
+    display: flex;
+    align-items: center;
+    column-gap: rem(24);
+    justify-content: space-between;
+  }
+}
