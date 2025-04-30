@@ -41,6 +41,12 @@ a {
     color: currentColor;
     text-decoration: none;
 }
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+
 ul, ol, menu {
     margin: 0;
     padding: 0;

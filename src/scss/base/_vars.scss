@@ -1,5 +1,5 @@
 :root {
-  --font-family-primary: "Inter",sans-serif;
+  --font-family-primary: "Inter", sans-serif;
 
   --background: #fff;
   --foreground: #575757;
@@ -10,17 +10,17 @@
   --secondary: #070707;
   --secondary-foreground: #fff;
 
-  --muted: #f5f3f3;
+  --muted: #F5F3F3;
   --muted-foreground: #070707;
-
-  --ghost: rgba(255,255,255,0.22);
-  --ghost-foreground: #fff;
 
   --accent: #F5AA21;
   --accent-foreground: #070707;
 
   --card: #fff;
   --card-foreground: #010101;
+
+  --ghost: rgba(255,255,255, 0.22);
+  --ghost-foreground: #fff;
 
   --input: #fff;
   --ring: #F5AA21;
@@ -29,6 +29,6 @@
   --radius: #{rem(12)};
 
   --content: #{rem(1380)};
-  --container--offset: #{rem(20)};
-  --container-width: calc(var(--content) + (var(--container--offset) * 2));
+  --container-offset: #{rem(20)};
+  --container-width: calc(var(--content) + (var(--container-offset) * 2));
 }

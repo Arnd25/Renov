@@ -4,12 +4,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-sass": "sass --watch src/scss/main.scss src/styles/main.css"
+    "watch-sass": "sass --watch src/scss/main.scss src/styles/main.css --style compressed"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "sass": "^1.86.3"
-  }
+    "sass": "^1.87.0"
+  },
+  "description": ""
 }
