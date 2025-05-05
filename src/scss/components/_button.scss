@@ -6,7 +6,7 @@
   column-gap: rem(8);
   color: var(--secondary);
   font-weight: 500;
-  border-radius: rem(72);
+  border-radius: unset;
   transition: background-color .2s;
   &__icon {
     @include square(#{rem(40)});

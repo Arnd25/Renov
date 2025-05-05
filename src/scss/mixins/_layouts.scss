@@ -2,6 +2,7 @@ $global_gap: 24px;
 
 @mixin square($size) {
   width: $size;
+  min-width: $size;
   height: $size;
 }
 
