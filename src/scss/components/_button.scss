@@ -6,8 +6,9 @@
   column-gap: rem(8);
   color: var(--secondary);
   font-weight: 500;
-  border-radius: unset;
+  border-radius: rem(64);
   transition: background-color .2s;
+  border: none;
   &__icon {
     @include square(#{rem(40)});
     @include d-flex(center, center);
