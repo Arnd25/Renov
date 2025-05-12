@@ -1,5 +1,9 @@
-import {initSwiper} from "./modules/swiper-cases";
-
-document.addEventListener('DOMContentLoaded', () => {
+import { initSwiper } from "./modules/swiper-cases.js";
+import { initWSwiper } from "./modules/swiper-work.js";
+document.addEventListener("DOMContentLoaded", () => {
     initSwiper();
 });
+document.addEventListener("DOMContentLoaded", () => {
+    initWSwiper();
+});
+
