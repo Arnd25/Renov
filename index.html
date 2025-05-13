@@ -21,7 +21,7 @@
                             <img src="./src/img/logo.svg" alt="Renov" class="logo__brand">
                         </a>
                     </div>
-                    <nav class="header__navbar navbar">
+                    <nav class="header__navbar navbar" data-menu-overlay>
                         <menu class="navbar__menu">
                             <li class="navbar__menu-item"><a href="./index.html" class="navbar__menu-link">Home</a></li>
                             <li class="navbar__menu-item"><a href="./service.html" class="navbar__menu-link">Service</a></li>
@@ -34,12 +34,15 @@
                             Contact Us
                             <span class="button__icon">+</span>
                         </a>
+                        <button aria-label="Открыть мобильное меню" class="header__menu-burger" data-menu-toggler>
+                            <i class="ri-menu-line"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </header>
         <main class="main">
-            <section class="intro intro--section">
+            <section class="intro intro--section service">
                 <div class="intro__header">
                     <div class="intro__container container">
                         <div class="intro__header-row intro__header-row--top">
@@ -513,7 +516,6 @@
                                     <i class="ri-arrow-right-up-line"></i>
                                 </span>
                             </button>
-                            <p class="footer__body-copyright">Copyright 2025 Renov All right reserved</p>
                         </div>
                         <div class="footer__body-right">
                             <ul class="footer__body-menu">
@@ -543,6 +545,7 @@
                                 </li>
                             </ul>
                         </div>
+                        <p class="footer__body-copyright">Copyright 2025 Renov All right reserved</p>
                     </div>
                 </div>
             </div>

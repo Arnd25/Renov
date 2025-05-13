@@ -11,4 +11,27 @@
     justify-content: space-between;
     column-gap: rem(24);
   }
+  &__tools {
+    @include d-flex(center,center);
+  }
+  &__menu-burger {
+    position: relative;
+    z-index: 1000;
+    @include square(#{rem(48)});
+    display: none;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--primary);
+    border: rem(2) solid var(--primary);
+    @include mobile {
+      display: flex;
+      justify-content: center;
+      place-items: center;
+    }
+  }
+  &:is(.service) {
+    position: unset;
+    padding-block: rem(32) rem(14);
+
+  }
 }
