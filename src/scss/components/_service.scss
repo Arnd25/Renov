@@ -6,11 +6,22 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-auto-flow: dense;
+        padding-inline: rem(32);
+        max-width: 100%;
         gap: rem(20);
         grid-template-areas: "a a b"
                         "a a b"
                         "c c d";
+        @include mobile {
+          grid-template-columns: 1fr;
+          grid-template-areas: "a"
+                            "b"
+                            "c"
+                            "d";
+
+        }
       }
+
       &__main {
         grid-area: a;
         background-color: var(--secondary);
@@ -67,7 +78,7 @@
       }
       &__img {
         grid-area: b;
-        width: 512px;
+
         height: 524px;
         background-color: gray;
         border-radius: var(--radius);
@@ -82,6 +93,7 @@
         justify-content: space-between;
         max-height: rem(320);
         overflow: hidden;
+
         &-title {
           margin: rem(59) rem(48) ;
           max-width: rem(272);
@@ -92,6 +104,9 @@
           grid-template-columns: repeat(2,233px);
           row-gap: rem(14);
           column-gap: rem(24);
+          @include mobile {
+            display: none;
+          }
         }
         &-img {
           width: rem(233);

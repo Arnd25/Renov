@@ -26,6 +26,9 @@
   &:is(.service) {
     .navbar__menu-link {
       color: var(--primary-foreground);
+      @include mobile {
+        color: var(--muted);
+      }
     }
   }
 }

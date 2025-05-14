@@ -1,7 +1,6 @@
 .intro {
   &:is(&--section) {
-    width: 100%;
-    padding-block: rem(32);
+    padding: rem(32);
     color: var(--secondary-foreground);
     .intro {
       &__header {
@@ -69,6 +68,7 @@
       }
       &__container {
         background-color: var(--secondary);
+        max-width: 100%;
       }
     }
 

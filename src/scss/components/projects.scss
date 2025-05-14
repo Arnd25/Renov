@@ -1,0 +1,64 @@
+.projects {
+  &:is(&--section) {
+    padding: rem(46) rem(32);
+    @include mobile {
+      padding-inline: unset;
+    }
+    .projects {
+      &__container {
+        max-width: 100%;
+        background-color: var(--secondary);
+        color: var(--secondary-foreground);
+        display: grid;
+        gap: rem(90);
+        padding: rem(60) rem(32);
+        border-radius: var(--radius);
+      }
+      &__header {
+        @include d-flex(start,space-between);
+        @include  mobile {
+          flex-direction: column;
+        }
+        &-title {
+          max-width: rem(560);
+        }
+        &-search {
+          max-width: rem(350);
+          font-size: rem(14);
+          line-height: rem(20);
+          @include d-flex(start,start);
+          flex-direction: column;
+        }
+      }
+      &__body {
+        &-list {
+          @include d-grid(1,40px);
+        }
+      }
+      &__search {
+        &-form {
+          display: flex;
+          align-items: center;
+          max-width: rem(430);
+          background: var(--background);
+          border-radius: rem(56);
+          padding: rem(4);
+          &-input {
+            border-radius: rem(56);
+            padding: 10px 12px;
+            border: none;
+            outline: none;
+            width: 100%;
+          }
+          &-button {
+            padding: rem(12) rem(41);
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: rem(32);
+          }
+        }
+      }
+    }
+  }
+}

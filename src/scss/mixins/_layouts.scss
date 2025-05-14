@@ -21,7 +21,7 @@ $global_gap: 24px;
     @include tablet {
       grid-template-columns: repeat(4,1fr);
     }
-  } @else if(4 <= $column < 6) {
+  } @else if(4 <= $column and $column < 6) {
     @include tablet {
       grid-template-columns: repeat(3,1fr);
     }
