@@ -1,0 +1,47 @@
+.solutions {
+  &:is(&--section) {
+    background-color: var(--muted);
+
+    .solutions {
+      &__container {
+        padding: rem(68) rem(80);
+        max-width: 100%;
+        color: var(--primary-foreground);
+        display: flex;
+        flex-direction: column;
+        gap: rem(60);
+      }
+      &__header {
+        display: flex;
+        flex-direction: column;
+        gap: rem(30);
+        justify-content: center;
+        place-items: center;
+        &-button {
+          padding: rem(6) rem(12);
+          &--active {
+            background-color: var(--secondary);
+            color: var(--primary);
+          }
+        }
+        &-text {
+          max-width: rem(640);
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          gap: rem(14);
+        }
+        &-buttons {
+          @include d-flex(center,center,8px);
+        }
+      }
+      &__body {
+        &-grid {
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          gap: rem(20);
+        }
+      }
+    }
+  }
+}
